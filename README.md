@@ -10,8 +10,6 @@ Welcome to the Calculator App for Android! This simple yet efficient calculator 
 
 ## Getting Started
 
-Follow these instructions to get the calculator app up and running on your Android device:
-
-1. Clone the repository to your local machine.
+1. Clone the repository into your local machine:
    ```bash
    git clone https://github.com/your-username/calculator-app-android.git
