@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5F6BAE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:backgroundTint="#40A59B"
+        android:text="CALCULATOR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#506A51"
+        android:backgroundTint="#5F8F61"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:textSize="80sp"
+        android:text="0"
+        android:autofillHints="Enter a number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <Button
+        android:id="@+id/ac_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="AC"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sqrt_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="CE"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/ac_button"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/square_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="x^2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/sqrt_button"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/divide_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="/"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/square_button"
+        app:layout_constraintTop_toBottomOf="@id/number"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/seven_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="7"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ac_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/eight_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="8"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/seven_button"
+        app:layout_constraintTop_toBottomOf="@id/sqrt_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/nine_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="9"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/eight_button"
+        app:layout_constraintTop_toBottomOf="@id/square_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/multiply_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0E8F61"
+        android:text="*"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/nine_button"
+        app:layout_constraintTop_toBottomOf="@id/divide_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/four_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="4"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seven_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/five_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="5"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/four_button"
+        app:layout_constraintTop_toBottomOf="@id/eight_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/six_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="6"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/five_button"
+        app:layout_constraintTop_toBottomOf="@id/nine_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/sub_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="-"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/six_button"
+        app:layout_constraintTop_toBottomOf="@id/multiply_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/one_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/four_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/two_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/one_button"
+        app:layout_constraintTop_toBottomOf="@id/five_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/three_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/two_button"
+        app:layout_constraintTop_toBottomOf="@id/six_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="+"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/three_button"
+        app:layout_constraintTop_toBottomOf="@id/sub_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/zero_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/one_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/neg_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="-x"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/zero_button"
+        app:layout_constraintTop_toBottomOf="@id/two_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/decimal_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="."
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/neg_button"
+        app:layout_constraintTop_toBottomOf="@id/three_button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/equal_button"
+        android:layout_width="99dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#0E8F61"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:text="="
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@id/decimal_button"
+        app:layout_constraintTop_toBottomOf="@id/add_button"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
